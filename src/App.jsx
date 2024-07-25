@@ -55,8 +55,13 @@ function App() {
   }, [timerId]);
 
   return (
-    <div>
+    <div className='App'>
+      <div className="inner-frame">
+        <div className="box1">
+        <div className="logo"><span>Stopwatch</span><span>Effortless Time Tracking</span></div>
+        <div className="time-box">
       <h1>{formatTime(elapsedTime)}</h1>
+      <div className="buttons">
       {!isRunning ? (
         <button onClick={startStopwatch}>Start</button>
       ) : (
@@ -64,11 +69,17 @@ function App() {
       )}
       <button onClick={resetStopwatch}>Reset</button>
       <button onClick={recordLap}>Lap</button>
+      </div>
+      </div>
+      </div>
+      <div className="box2">
       <ul>
         {lapTimes.map((lapTime, index) => (
-          <li key={index}>{`Lap ${index + 1}: ${formatTime(lapTime)}`}</li>
+          <li key={index}><span>{`Lap ${index + 1} :`}</span><span>{`${formatTime(lapTime)}`}</span></li>
         ))}
       </ul>
+        </div>
+      </div>
     </div>
   )
 }
