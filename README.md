@@ -1,8 +1,32 @@
-# React + Vite
+Stopwatch App
+A simple and elegant stopwatch application built with React. This project demonstrates the use of React hooks to manage state and side effects for time tracking.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Features
+Start/Stop: Begin or pause the stopwatch.
+Reset: Clear the elapsed time and lap records.
+Lap: Record lap times and display them in a list.
+Time Formatting: Shows time in MM:SS.ss format for readability.
+Usage
+Start: Click the "Start" button to begin tracking time.
+Pause: Click the "Pause" button to halt the timer.
+Reset: Click the "Reset" button to reset the stopwatch and lap times.
+Lap: Click the "Lap" button to record the current time as a lap.
+Code Overview
+State Management:
 
-Currently, two official plugins are available:
+elapsedTime: Tracks the time that has passed since the stopwatch started.
+isRunning: Boolean flag to indicate if the stopwatch is running.
+lapTimes: Array to store recorded lap times.
+timerId: Holds the ID of the interval timer for cleanup purposes.
+Functions:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+startStopwatch: Starts the stopwatch and sets up the interval timer.
+pauseStopwatch: Pauses the stopwatch and clears the interval timer.
+resetStopwatch: Resets the elapsed time and lap times, and clears the interval timer.
+recordLap: Adds the current elapsed time to the lap times list.
+formatTime: Formats elapsed time into MM:SS.ss for display.
+Effect Hook:
+
+Cleans up the interval timer when the component unmounts to prevent memory leaks.
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
