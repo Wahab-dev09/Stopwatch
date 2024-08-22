@@ -1,5 +1,11 @@
 <h1>Stopwatch App</h1>
 
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/4aebdbae-68a9-4f0c-8a74-77be5311d368" alt="Stopwatch Screenshot 1" width="32%" />
+  <img src="https://github.com/user-attachments/assets/8b3052f5-c5da-4830-96bb-964156fd894e" alt="Stopwacth Screenshot 3" width="32%" />
+  <img src="https://github.com/user-attachments/assets/4b99e65f-8578-4bfb-b99f-14c4bfbd92a5" alt="Stopwatch Screenshot 2" width="32%" />
+</p>
+
 A simple and elegant stopwatch application built with React. This project demonstrates the use of React hooks to manage state and side effects for time tracking.
 
 ## Features
@@ -33,11 +39,5 @@ A simple and elegant stopwatch application built with React. This project demons
 
 - **Effect Hook**:
   - Cleans up the interval timer when the component unmounts to prevent memory leaks.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
 
 Made with ❤️ using React
